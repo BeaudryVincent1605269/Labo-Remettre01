@@ -2,7 +2,7 @@
 // Auteur : Vincent Beaudry
 // Date : 2020-09-11
 
-#include <iostream>   //pour afficher à l'écran (o out output : sortie) ou (i in input : entrée)
+#include <iostream>   //pour afficher Ã  l'Ã©cran (o out output : sortie) ou (i in input : entrÃ©e)
 using namespace std;
 int main()
 {
@@ -11,22 +11,24 @@ int main()
 
 	int nb1;
 
-	std::cout << " Veuillez entrer un nombre entier à 5 chiffres : ";
+	std::cout << " Veuillez entrer un nombre entier Ã  5 chiffres : ";
 	std::cin >> nb1;
 
-	
-	if (nb1 > 9999 && nb1 < 100000)              // && signifie "et" pour inclure les deux condition.
+	// KM : Essaie d'utiliser juste les notions prÃ©sentÃ©es en classe jusqu'Ã  prÃ©sent
+	if (nb1 > 9999 && nb1 < 100000)              
+		// KM : TrÃ¨s bon commentaire
+		// FR : && signifie "et" pour inclure les deux condition.
 	
 	{
-		std::cout << nb1 / 10000 << std::endl;   // Le nombre rentrer sera diviser par 10000 l'ordinateur affichera donc le premier chiffre du nombre.
-		nb1 = nb1 % 10000;                                                                                                // % Sert à ce que le programme n'affiche pas le restant du nombre diviser.
+		std::cout << nb1 / 10000 << std::endl;   // FR : Le nombre rentrer sera diviser par 10000 l'ordinateur affichera donc le premier chiffre du nombre.
+		nb1 = nb1 % 10000;                                                                                                // % Sert Ã  ce que le programme n'affiche pas le restant du nombre diviser.
 		std::cout << nb1 / 1000 << std::endl;    // Le nombre rentrer sera diviser par 1000 l'ordinateur affichera donc le premier chiffre du nombre.
-		nb1 = nb1 % 1000;                                                                                                 // % Sert à ce que le programme n'affiche pas le restant du nombre diviser.
+		nb1 = nb1 % 1000;                                                                                                 // % Sert Ã  ce que le programme n'affiche pas le restant du nombre diviser.
 		std::cout << nb1 / 100 << std::endl;     // Le nombre rentrer sera diviser par 100 l'ordinateur affichera donc le premier chiffre du nombre.
-		nb1 = nb1 % 100;                                                                                                  // % Sert à ce que le programme n'affiche pas le restant du nombre diviser.
+		nb1 = nb1 % 100;                                                                                                  // % Sert Ã  ce que le programme n'affiche pas le restant du nombre diviser.
 		std::cout << nb1 / 10 << std::endl;      // Le nombre rentrer sera diviser par 10 l'ordinateur affichera donc le premier chiffre du nombre.
-		nb1 = nb1 % 10;                                                                                                   // % Sert à ce que le programme n'affiche pas le restant du nombre diviser.
-		std::cout << nb1 << std::endl;           // Permet à ce que le dernier chiffre du nombre s'affiche. 
+		nb1 = nb1 % 10;                                                                                                   // % Sert Ã  ce que le programme n'affiche pas le restant du nombre diviser.
+		std::cout << nb1 << std::endl;           // Permet Ã  ce que le dernier chiffre du nombre s'affiche. 
 		
 	} 
 	
